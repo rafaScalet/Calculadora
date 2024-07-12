@@ -23,4 +23,8 @@ function calcular(operacao){
     }
 
     document.getElementById('resultado').value = resultado
+
+    const novoHistorico = `<div>${num1} ${operacao} ${num2} = ${resultado}</div>`
+
+    document.getElementById('historico').innerHTML = novoHistorico + document.getElementById('historico').innerHTML
 }
