@@ -11,19 +11,23 @@
     <div class="container">
         <div class="calculadora">
             <object data="assets/calculadora.svg" type="image/svg+xml"></object>
-            <h1>Calculadora</h1>
-            <input id="num1" type="number">
-            <input id="num2" type="number">
+            <div class="calculadora-titulo">Calculadora</div>
+            <input id="num1" type="number" placeholder="Digite um número">
+            <input id="num2" type="number" placeholder="Digite um número">
             <div class="buttons">
                 <button onclick="calcular('+')">+</button>
                 <button onclick="calcular('-')">-</button>
                 <button onclick="calcular('*')">*</button>
                 <button onclick="calcular('/')">/</button>
             </div>
-            <input id="resultado" type="text" readonly>
+            <input id="resultado" type="text" placeholder="0" readonly>
         </div>
-        <div id="historico" class="historico">
-
+        <div class="historico">
+            <h1>Histórico:</h1>
+            <div class="ultimas-operacoes">
+                <small>10 últimas operações:</small>
+                <div id="historico"></div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

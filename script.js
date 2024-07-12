@@ -24,7 +24,12 @@ function calcular(operacao){
 
     document.getElementById('resultado').value = resultado
 
-    const novoHistorico = `<div>${num1} ${operacao} ${num2} = ${resultado}</div>`
+    const novoHistorico = `<p>${num1} ${operacao} ${num2} = ${resultado}</p>`
+    const historico = document.getElementById('historico')
 
-    document.getElementById('historico').innerHTML = novoHistorico + document.getElementById('historico').innerHTML
+    historico.innerHTML = novoHistorico + historico.innerHTML
+
+    if (historico.children.length > 10) {
+        historico.removeChild(historico.childNodes[10])
+    }
 }

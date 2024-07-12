@@ -9,6 +9,7 @@ input {
     font-size: 1.2rem;
     margin: 15px 70px;
     border-radius: 5px;
+    text-align: right;
 }
 
 input[type=number]:focus {
@@ -36,10 +37,11 @@ button:hover {
 
 .container {
     background-color: #d3d3d3;
-    width: 600px;
+    width: 900px;
+    height: 500px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     margin: auto;
     padding: 40px;
     border-radius: 4px;
@@ -51,8 +53,29 @@ button:hover {
     width: 300px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     padding: 30px;
     row-gap: 20px;
     border-radius: 10px;
+}
+
+.calculadora-titulo {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.historico {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    width: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.ultimas-operacoes {
+    text-align: right;
+    padding: 20px;
 }
