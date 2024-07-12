@@ -15,6 +15,10 @@ function calcular(operacao){
             resultado = num1 * num2
             break
         case '/':
+            if (num2 === 0) {
+                alert('Não é possível dividir por zero!')
+                return
+            }
             resultado = num1 / num2
             break
         default:
